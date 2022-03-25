@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <p class="give">Give us a call! <span class="num">866-535-8808</span></p>
+        <p class="call">Give us a call at <span class="num"> 866-535-8807</span></p>
+        <div class="mobile">
+                <div class="header">
+                    <img src="./images/trinity-white.png" alt="title" class="trinity"/>
+                    <!-- <p class="call">Give us a call at <span class="num"> 866-535-8807</span></p> -->
+                    <p class="gain">Gain new insight to grow digital revenues faster.</p>
+                    <p class="sign">Sign up for your <span class="free">FREE</span> Website Strategy Session ($795 value)</p>
+                </div> <br />
+            <div class="consult">
+                <p>In a <span class="free">FREE</span> consultation with our CEO, 
+                <span class="name">Craig Smith</span> you will receive a live website 
+                review, complete with our toolset, to help you understand what digital 
+                growth opportunities exist in your business.</p>
+                <p>Within our strategy you will recieve:</p>
+                <ul>
+                    <li>An expert analysis of your eCommerce store or website</li>
+                    <li>Diagnostic SEO Crawl Report</li>
+                    <li>Site Speed & Performance Assessment</li>
+                    <li>User Experience Review and Recommendations</li>
+                    <li>Email & Marketing Automation Review</li>
+                    <li>No Obligation & 100% FREE</li>
+                </ul>
+            </div> 
+        </div>
+        <form>
+            <p class="top">FREE</p>
+            <p class="strat">Website Strategy Session</p>
+            <label>First Name</label> <br />
+            <input type="text" class="fname inp" /> <br />
+            <label>Last Name</label> <br />
+            <input type="text" class="lname inp" /> <br />
+            <label>Website</label> <br />
+            <input type="text" class="web inp" /> <br />
+            <label>Email <span class="red">*</span></label> <br />
+            <input type="text" class="email inp" /> <br />
+            <label>Phone Number</label> <br />
+            <input type="text" class="phone inp" /> <br />
+            <button class="btn">Request Session</button>
+        </form> 
+        <hr />
+        <p class="easy">We make working together easy.</p>
+        <div class="boxes">
+            <div class="box">
+                <img src="./images/vid-chat.png" alt="talk" class="pics" />
+                <strong class="title">1. 30-MINUTE VIDEO CONVERSATION</strong>
+                <p class="descript">
+                    Get started with a free consultation 
+                    to help us understand where our team 
+                    can best help you build and grow your 
+                    online business.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/roadmap.png" alt="talk" class="pics"/>
+                <strong class="title">2. DIAGNOSTIC ROADMAP</strong>
+                <p class="descript">
+                    Within a week we'll diagnose your biggest
+                    opportunitties and build a custom roadmap 
+                    to optimize your ecommerce experience.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/growth.png" alt="talk" class="pics" />
+                <strong class="title">3. GROWTH SERVICES</strong>
+                <p class="descript">
+                    Our team will start immediately taking 
+                    action to make improvements and deliver 
+                    a brand experience that drives lifetime 
+                    value.
+                </p>
+            </div>
+        </div>
+        <p class="trusted">TRUSTED BY:</p>
+        <img src="./images/arrow-left.png" id="left" alt="left" class="arrow inline left" />
+        <div class="logos">
+            <img src="./images/logo-one.png" alt="logo1" id="one" class="logo inline" />
+            <img src="./images/logo-two.png" alt="logo2" id="two" class="logo inline" />
+            <img src="./images/logo-three.png" alt="logo3" id="three" class="logo inline hide"/>
+            <img src="./images/logo-4.png" alt="logo4" id="four" class="logo inline hide"/>
+            <img src="./images/logo-five.png" alt="logo5" id="five" class="logo inline hide"/>
+            <img src="./images/logo-six.png" alt="logo5" id="six" class="logo inline hide"/>
+            <img src="./images/logo-seven.png" alt="logo5" id="seven" class="logo inline hide"/>
+            <img src="./images/logo-eight.png" alt="logo5" id="eight" class="logo inline hide"/>
+        </div>
+        <img src="./images/arrow-right.png" id="right" alt="right" class="arrow inline" />
+        <div id="circles" class="circles">
+            <div id="first" class="circle select"></div><div  id="second" class="circle"></div><div  id="third" class="circle"></div><div  id="fourth" class="circle"></div>
+        </div>
+        <div class="footer">
+            <img class='emblem' src="./images/emblem-white.png" alt="emblem" /> <br />
+            <p class="bot">@2020 Trinity Insight, LLC. All Rights Reserved</p>
+        </div>
+    </body>
+    <script>
+
+        //switch the logo container with the arrow images
+        let flip = false;
+        document.getElementById('right').addEventListener('click', function() {
+            if(flip===false) {
+                document.getElementById('one').style.display='none';
+                document.getElementById('two').style.display='none';
+                document.getElementById('three').style.display='none';
+                document.getElementById('six').style.display='block';
+                document.getElementById('seven').style.display='block';
+                document.getElementById('eight').style.display='block';
+                flip = true;
+            }
+        })
+
+        document.getElementById('left').addEventListener('click', function() {
+            if(flip===true) {
+                document.getElementById('one').style.display='block';
+                document.getElementById('one').style.marginLeft="0"
+                document.getElementById('two').style.display='block';
+                document.getElementById('three').style.display='block';
+                document.getElementById('six').style.display='none';
+                document.getElementById('seven').style.display='none';
+                document.getElementById('eight').style.display='none';
+                flip = false;
+            }
+        })
+
+        //cycle through logos with circles in mobile view
+        let first = document.getElementById('first');
+        let second = document.getElementById('second');
+        let third = document.getElementById('third');
+        let fourth = document.getElementById('fourth');
+
+        function showLogos (id) {
+            let one = document.getElementById('one');
+            let two = document.getElementById('two');
+            let three = document.getElementById('three');
+            let four = document.getElementById('four');
+            let five = document.getElementById('five');
+            let six = document.getElementById('six');
+            let seven = document.getElementById('seven');
+            let eight = document.getElementById('eight');
+
+            if(id === 'first'){
+                one.classList.remove('hide');
+                two.classList.remove('hide');
+                three.classList.add('hide');
+                four.classList.add('hide');
+                five.classList.add('hide');
+                six.classList.add('hide');
+                seven.classList.add('hide');
+                eight.classList.add('hide');
+            }
+
+            if(id === 'second'){
+                one.classList.add('hide');
+                two.classList.add('hide');
+                three.classList.remove('hide');
+                four.classList.remove('hide');
+                five.classList.add('hide');
+                six.classList.add('hide');
+                seven.classList.add('hide');
+                eight.classList.add('hide');
+            }
+
+            if(id === 'third'){
+                one.classList.add('hide');
+                two.classList.add('hide');
+                three.classList.add('hide');
+                four.classList.add('hide');
+                five.classList.remove('hide');
+                six.classList.remove('hide');
+                seven.classList.add('hide');
+                eight.classList.add('hide');
+            }
+
+            if(id === 'fourth'){
+                one.classList.add('hide');
+                two.classList.add('hide');
+                three.classList.add('hide');
+                four.classList.add('hide');
+                five.classList.add('hide');
+                six.classList.add('hide');
+                seven.classList.remove('hide');
+                eight.classList.remove('hide');
+            }
+        }
+
+        document.getElementById('first').addEventListener('click', function(e) {
+                first.classList.add('select');
+                second.classList.remove('select');
+                third.classList.remove('select');
+                fourth.classList.remove('select');
+
+            showLogos(e.target.id);
+        })
+
+        document.getElementById('second').addEventListener('click', function(e) {
+                first.classList.remove('select');
+                second.classList.add('select');
+                third.classList.remove('select');
+                fourth.classList.remove('select');
+
+            showLogos(e.target.id);
+        })
+
+        document.getElementById('third').addEventListener('click', function(e) {
+                first.classList.remove('select');
+                second.classList.remove('select');
+                third.classList.add('select');
+                fourth.classList.remove('select');
+
+            showLogos(e.target.id);
+        })
+
+        document.getElementById('fourth').addEventListener('click', function(e) {
+                first.classList.remove('select');
+                second.classList.remove('select');
+                third.classList.remove('select');
+                fourth.classList.add('select');
+
+            showLogos(e.target.id);
+        })
+    </script>
+    </html>
